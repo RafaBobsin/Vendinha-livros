@@ -27,6 +27,11 @@ header a:hover{
     transition: .3s;
 }
 
+main{
+    width: 90vw;
+    margin: auto;
+}
+
 footer{
     width: 100%;
     background-color: #457b9d;
