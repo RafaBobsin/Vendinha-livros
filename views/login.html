@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Vendinha de Livros MMR</title>
-    <link rel="stylesheet" href="../public/css/vendas.css">
+    <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/dropdown.css">
     <link rel="icon" href="../public/images/logo_vendinha.png" sizes="17x17" type="image/png">
     <script src="https://kit.fontawesome.com/70aefda47d.js" crossorigin="anonymous"></script>
@@ -36,9 +36,29 @@
     </header>
 
     <main>
-        <h1>Página de login</h1>
+        <h1>Faça login para comprar</h1>
+
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha">
+
+            <label for="confSenha">Confirme a Senha:</label>
+            <input type="password" name="confSenha">
+
+            <button type="submit">Efetuar</button>
+        </form>
+
     </main>
-    
+
     <footer>
         <img src="../public/images/logo_vendinha_side.png" alt="logo da vendinha">
 

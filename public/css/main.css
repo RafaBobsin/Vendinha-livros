@@ -1,91 +1,71 @@
-/*{border: 1px solid black;}*/
+body{
+    background-color: #eef6fc /*#eef4fa*/;
+    margin: 0;
+}
 
 header{
+    background-color: #457b9d;
     width: 100%;
-    height: 8%;
-    border-bottom: 1px solid #fed9b7;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    /*background-color: #ba394c;*/
+    align-items: center;
+}
+
+header img{
+    height: 10vh;
 }
 
 header a{
     color: white;
-    font-size: 18px;
     text-decoration: none;
+    font-size: 18px;
 }
 
 header a:hover{
-    font-weight: bold;
     font-size: 20px;
-    transition: .1s;
+    font-weight: bold;
+    transition: .3s;
 }
 
-body{
-    /*background-image: linear-gradient(to bottom, #e63946, #ee6c54, #f4946c, #f9b88e, #fed9b7);*/
-    /*background-image: linear-gradient(to bottom, #a41e51, #ba394c, #cc5447, #d97044, #e18d44);*/
-   /* background-image: linear-gradient(to right bottom, #f07167, #dc699b, #a575bd, #5a7fc0, #0081a7);*/
-   background-image: linear-gradient(to bottom, #1d3557, #1e4267, #1c5076, #195e85, #126d94, #217b9f, #2f89a9, #3d97b3, #59a8bc, #74b9c6, #8ec9d0, #a8dadc);
-    height: 100vh;
-    margin: auto
-}
-
-body img{
-    width: 15vw;
-    height: 15vw;
-}
-
-main{
-    display:flex;
-    flex-direction: column;
+footer{
+    width: 100%;
+    background-color: #457b9d;
+    position: absolute;
+    bottom: 0;
+    display: flex;
     align-items: center;
-    margin-top: 10vh;
+    justify-content: space-around;
 }
 
-main h1{
+footer img{
+    height: 15vh;
+}
+
+footer h3{
     color: white;
-    font-size: 50px;
+    margin: 0;
+    margin-bottom: 0.5vh;
+    text-align: center;
+}
+
+footer p{
+    color: white;
     margin: 0;
     text-align: center;
 }
 
-main h3{
-    color: white;
-    font-size: 24px;
-    text-align: center;
+footer div{
+    max-width: 20vw;
+    margin: 1vw 1vh;
 }
 
-main p{
-    color: white;
-    width: 70vw;
-    text-align: center;
-    margin-top: 0;
-}
-
-.botoes{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3vh;
-}
-
-.botoes a{
-    background-color: #c83e4d;
-    color: white;
+footer a{
     text-decoration: none;
-    font-size: 18px;
-    width: 30%;
-    border-radius: 15px;
-    text-align: center;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    border: 1px solid #a44a3f;
+    color: white;
 }
 
-.botoes a:hover{
-    background-color: #a44a3f;
-    border: 1px solid #c83e4d;
+footer a:hover{
     font-weight: bold;
+    color: #fed9b7;
     transition: .5s;
 }
