@@ -30,6 +30,8 @@ header a:hover{
 main{
     width: 90vw;
     margin: auto;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 footer{
