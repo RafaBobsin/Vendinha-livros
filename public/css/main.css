@@ -32,9 +32,8 @@ body{
 }
 
 body img{
-    width: 13vw;
-    height: 13vw;
-    margin-bottom: 2vh;
+    width: 15vw;
+    height: 15vw;
 }
 
 main{
@@ -61,15 +60,6 @@ main h3{
     justify-content: space-around;
 }
 
-.botoes button{
-    width: 30%;
-    height: 5vh;
-    border-radius: 15px;
-    background-color: #c83e4d;
-    color: white;
-    font-size: 16px;
-}
-
 .botoes a{
     background-color: #c83e4d;
     color: white;
@@ -81,4 +71,11 @@ main h3{
     text-align: center;
     padding-top: 1vh;
     border: 1px solid #a44a3f;
+}
+
+.botoes a:hover{
+    background-color: #a44a3f;
+    border: 1px solid #c83e4d;
+    font-weight: bold;
+    transition: .5s;
 }
