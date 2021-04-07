@@ -1,9 +1,42 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Vendinha de Livros MMR</title>
-    </head>
-    <body>
-        <h1>Página de quem somos</h1>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vendinha de Livros MMR</title>
+    <link rel="stylesheet" href="../public/css/vendas.css">
+    <link rel="stylesheet" href="../public/css/dropdown.css">
+    <link rel="icon" href="../public/images/logo_vendinha.png" sizes="17x17" type="image/png">
+    <script src="https://kit.fontawesome.com/70aefda47d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../public/js/dropdown.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn" id="btn" onclick="dropdownFunction()">
+                <i class="fas fa-bars" id="btn"></i></button>
+
+            <div class="dropdown-content" id="myDropdown">
+                <div class="links">
+                    <a href="index.html">Inicial</a>
+                    <a href="vendas.html">A venda</a>
+                    <a href="quemSomos.html">Quem Somos</a>
+                    <a href="contatenos.html">Fale Conosco</a>
+                    <a href="generos.html">Generos mais vendidos</a>
+                    <a href="autores.html">Autores</a>
+                </div>
+            </div>
+        </div>
+
+        <img src="../public/images/logo_vendinha_side.png" alt="logo da vendinha">
+
+        <a href="carrinho.html">Compras</a>
+        <a href="login.html">Login</a>
+
+    </header>
+    
+    <h1>Página de quem somos</h1>
+</body>
+
 </html>

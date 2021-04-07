@@ -1,0 +1,29 @@
+body{
+    background-color: #eef6fc /*#eef4fa*/;
+    margin: 0;
+}
+
+header{
+    background-color: #457b9d;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 13vw;
+    height: 10vh;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header a:hover{
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
