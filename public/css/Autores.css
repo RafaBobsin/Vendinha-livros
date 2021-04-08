@@ -1,0 +1,65 @@
+.formato{
+
+    text-align: justify;
+    margin-left: 1%; }
+
+#Anne {
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    margin-right: 1% ;
+    margin-left: 1% }
+
+main h2 {
+    margin-left: 1%; }
+
+#Jkimg {
+
+    width: 20vw;
+    height: 22vw;
+    float: left;
+    margin-right: 1% ;
+   }
+
+.Jk {
+    text-align: justify;
+}
+#Jojoimg{
+    width: 20vw;
+    height: 24vw;
+    float: left;
+    margin-right: 1% ;
+}
+.Jojo {
+    text-align: justify;
+}
+
+#Suzanneimg {
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    margin-right: 1% ;
+}
+.Suzanne {
+    text-align: justify;
+}
+
+#Rainbowimg{
+    width: 22vw;
+    height: 28vw;
+    float: left;
+    margin-right: 1% ;
+}
+.Rainbow{
+    text-align: justify;
+}
+
+#RJimg{
+    width: 20vw;
+    height: 15vw;
+    float: left;
+    margin-right: 1% ;
+}
+.RJ{
+    text-align: justify;
+}
