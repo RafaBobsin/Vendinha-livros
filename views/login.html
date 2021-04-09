@@ -9,6 +9,7 @@
     <link rel="icon" href="../public/images/logo_vendinha.png" sizes="17x17" type="image/png">
     <script src="https://kit.fontawesome.com/70aefda47d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../public/js/dropdown.js"></script>
+    <script type="text/javascript" src="../public/js/validacao.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
             <input type="text" name="nome" placeholder="Digite aqui..." required="required">
 
             <label for="cpf">CPF:</label>
-            <input type="number" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required">
+            <input id="cpf" type="text" name="cpf" placeholder="xxxxxxxxxxx" required="required">
 
             <label for="email">E-mail:</label>
             <input type="email" name="email" placeholder="seuemail@email.com" required="required">
@@ -55,7 +56,7 @@
             <label for="confSenha">Confirme a Senha:</label>
             <input type="password" name="confSenha" placeholder="Repita a senha acima" required="required">
 
-            <button type="submit">Efetuar</button>
+            <button onclick="validar()">Efetuar</button>
         </form>
 
     </main>

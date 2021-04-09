@@ -41,19 +41,19 @@
 
         <form>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome">
+            <input type="text" name="nome" placeholder="Digite aqui..." required="required">
 
             <label for="cpf">CPF:</label>
-            <input type="number" name="cpf">
+            <input type="number" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required">
 
             <label for="email">E-mail:</label>
-            <input type="email" name="email">
+            <input type="email" name="email" placeholder="seuemail@email.com" required="required">
 
             <label for="tel">Telefone:</label>
-            <input type="number" name="tel">
+            <input type="number" name="tel" placeholder="Não esqueça o DDD" required="required">
 
             <label for="cidade">Cidade sede da Vendinha:</label>
-            <select name="cidades">
+            <select name="cidades" required="required">
                 <option value="" data-default disabled selected></option>
                 <option>Porto Alegre</option>
                 <option>São Paulo</option>
@@ -64,7 +64,7 @@
             </select>
 
             <label for="estado">Estado:</label>
-            <select name="estado">
+            <select name="estado" required="required">
                 <option value="" data-default disabled selected></option>
                 <option>Rio Grande do Sul</option>
                 <option>São Paulo</option>
@@ -74,7 +74,7 @@
             </select>
 
             <label for="idade">Idade:</label>
-            <input type="number" name="idade">
+            <input type="number" name="idade" placeholder="Digite aqui..." required="required">
 
             <label for="sexo">Sexo:</label>
             <div class="radio">
@@ -89,7 +89,7 @@
             </div>
 
             <label for="mot">Motivo do contato:</label>
-            <select name="mot">
+            <select name="mot" required="required">
                 <option value="" data-default disabled selected></option>
                 <option>Dúvida</option>
                 <option>Elogio</option>
@@ -98,7 +98,9 @@
             </select>
 
             <label for="textArea">Deixe abaixo o que gostaria de dizer:</label>
-            <textarea></textarea>
+            <textarea placeholder="Digite aqui..." required="required"></textarea>
+
+            <button type="submit" onclick="validar()"></button>
         </form>
     </main>
 
