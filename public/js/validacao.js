@@ -90,3 +90,33 @@ function verificar_senha() {
         vConfSenha = false;
     }
 }
+
+function mostra_senha() {
+    var senha = document.getElementById("senha");
+    
+    if (senha.type == 'password') {
+        senha.type = 'text';
+        document.getElementById("icon1").style.display = 'none';
+        document.getElementById("icon2").style.display = 'block';
+        
+    } else{
+        senha.type = 'password';
+        document.getElementById("icon1").style.display = 'block';
+        document.getElementById("icon2").style.display = 'none';
+    }
+}
+
+function mostra_senha2() {
+    var senha = document.getElementById("confSenha");
+    
+    if (senha.type == 'password') {
+        senha.type = 'text';
+        document.getElementById("icon3").style.display = 'none';
+        document.getElementById("icon4").style.display = 'block';
+        
+    } else{
+        senha.type = 'password';
+        document.getElementById("icon3").style.display = 'block';
+        document.getElementById("icon4").style.display = 'none';
+    }
+}
