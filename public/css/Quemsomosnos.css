@@ -1,0 +1,40 @@
+footer {
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    font-size: large;
+}
+
+p{
+    text-align: justify;
+    line-height: 4.5vh;
+}
+
+#Maiteimg {
+    width: 20vw;
+    height: 20vw;
+    float: right;
+    margin: 1%;
+    border-radius: 2%;
+}
+
+#Mellimg {
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    margin: 1%;
+    border-radius: 2%;
+}
+
+#Rafaimg {
+    width: 20vw;
+    height: 20w;
+    float: right;
+    margin: 1%;
+    border-radius: 2%;
+}
+
