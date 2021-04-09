@@ -9,7 +9,7 @@ footer {
 h1 {
     margin: auto;
     width: 80vw;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
 }
 
 main{
@@ -39,7 +39,8 @@ p{
 .principal {
     margin: auto;
     width: 78vw;
-    border: 1px black solid;
+    border: 1px #f07167 solid;
+    box-shadow: 0 0 10px 3px #f07167;
     background-color: #eaf2f8;
     padding: 4vh;
 }
