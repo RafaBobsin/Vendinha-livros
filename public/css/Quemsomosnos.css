@@ -2,6 +2,16 @@ footer {
     position: relative;
 }
 
+* {
+    line-height: 4.5vh;
+}
+
+h1 {
+    margin: auto;
+    width: 80vw;
+    margin-bottom: 2vh;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -11,30 +21,51 @@ main{
 
 p{
     text-align: justify;
-    line-height: 4.5vh;
 }
 
-#Maiteimg {
-    width: 20vw;
-    height: 20vw;
-    float: right;
+#img {
+    width: 90%;
     margin: 1%;
     border-radius: 2%;
 }
 
-#Mellimg {
-    width: 20vw;
-    height: 20vw;
-    float: left;
+#img-esq {
+    width: 90%;
     margin: 1%;
     border-radius: 2%;
+    margin-left: 8%;
 }
 
-#Rafaimg {
-    width: 20vw;
-    height: 20w;
-    float: right;
-    margin: 1%;
-    border-radius: 2%;
+.principal {
+    margin: auto;
+    width: 78vw;
+    border: 1px black solid;
+    background-color: #eaf2f8;
+    padding: 4vh;
 }
 
+.box-direita {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-esquerda {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+#txt-ini {
+    margin: 0 6vh;
+}
+
+#txt {
+    margin: 1vh 3vh;
+}
