@@ -1,3 +1,7 @@
 adicionarCarrinho = () => {
-    alert("Livro 1 add");
+    alert("Livro adicionado ao carrinho!");
+}
+
+realizarPagamento = () => {
+    alert("Din din din manda teu dinheiro pra mim");
 }

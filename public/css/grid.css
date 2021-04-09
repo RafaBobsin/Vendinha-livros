@@ -114,3 +114,7 @@ button:hover{
 footer {
     position: relative;
 }
+
+#footer {
+    position: absolute;
+}

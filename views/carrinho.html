@@ -5,12 +5,14 @@
     <title>Vendinha de Livros MMR</title>
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/dropdown.css">
+    <link rel="stylesheet" href="../public/css/grid.css">
     <link rel="icon" href="../public/images/logo_vendinha.png" sizes="17x17" type="image/png">
     <script src="https://kit.fontawesome.com/70aefda47d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../public/js/dropdown.js"></script>
 </head>
 
 <body>
+
     <header>
         <div class="dropdown">
             <button class="dropbtn" id="btn" onclick="dropdownFunction()">
@@ -37,10 +39,35 @@
 
     <main>
         <h1>Carrinho de compras</h1>
-        
+        <div class="grid-principal">
+            <div class="grid-livro">
+                <div class="grid-imagem">
+                    <img id="livros" src="../public/images/carrinho.png" alt="livro">
+                </div>
+                <div class="grid-descricao">
+                    <div class="grid-texto">
+                        <h3>Nome do produto</h3>
+                        <p>Descrião do produto</p>
+                    </div><br>
+                    <div class="grid-carrinho">
+                        <div class="grid-carrinho1">
+                            <div class="grid-valor">
+                                <p id="valor">TOTAL: R$ <b>00,00</b></p>
+                            </div>
+                            <div class="grid-botao">
+                                <p>
+                                    <button onclick="adicionarCarrinho();">Realizar pagamento</button>
+                                </p>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <img src="../public/images/logo_vendinha_side.png" alt="logo da vendinha">
 
         <div class="direitos">
@@ -65,6 +92,11 @@
         <img src="../public/images/logo_if_vertical_white.png" alt="logo do IFRS">
 
     </footer>
+    <script>
+        adicionarCarrinho = () => {
+            alert("Din din din manda teu dinheiro pra mim");
+        }
+    </script>
 
 </body>
 
