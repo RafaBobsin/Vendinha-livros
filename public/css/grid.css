@@ -1,0 +1,112 @@
+body {
+    margin: auto;
+    position: relative;
+}
+
+h1 {
+    margin: auto;
+    width: 82vw;
+    margin-bottom: 2vh;
+}
+
+.grid-principal {
+    margin: auto;
+    width: 80vw;
+    border: 1px black solid;
+    padding: 2vh;
+    background-color: #eaf2f8;
+}
+
+.grid-livro {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.grid-imagem {
+    padding: 1vw;
+}
+
+.grid-descricao {
+    padding: 1vw;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.grid-carrinho {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-carrinho1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-botao {
+    justify-content: center;
+}
+
+#livros {
+    width: 90%;
+    float: right;
+}
+
+hr {
+    width: 95%;
+}
+
+button{
+    justify-content: center;
+    background-color: #c83e4d;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 1px solid #a44a3f;
+    width: 90%;
+}
+
+button:hover{
+    background-color: #dd7b6e;
+    border: 1px solid #c83e4d;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.grid-genero {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-gen {
+    width: 25vw;
+    margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #eef6fc;
+    padding-top: 5px;
+}
+
+#generos {
+    margin-top: 2%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.box {
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+footer {
+    position: relative;
+}
