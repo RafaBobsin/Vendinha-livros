@@ -51,14 +51,16 @@
             <input type="email" name="email" placeholder="seuemail@email.com" required="required">
 
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" placeholder="Digite aqui..." required="required">
+            <input id="senha" type="password" name="senha" placeholder="Digite aqui..." required="required" onkeyup="javascript:validar_senha()">
+            <div id="mostrar"></div>
 
             <label for="confSenha">Confirme a Senha:</label>
-            <input type="password" name="confSenha" placeholder="Repita a senha acima" required="required">
+            <input type="password" id="confSenha" name="confSenha" placeholder="Repita a senha acima" required="required" onkeyup="javascript:verificar_senha()">
+            <div id="igual"></div>
 
             <button onclick="validar()">Efetuar</button>
         </form>
-
+<!--onkeyup="mostraF_senha()-->
     </main>
 
     <footer id="login">

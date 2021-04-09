@@ -45,7 +45,6 @@ main form button{
     width: 20vw;
     height: 3.5vh;
     align-self: center;
-    margin-top: 3vh;
     border-radius: 10px;
     background-color: #f07167;
     color: white;
@@ -93,4 +92,45 @@ form textarea{
 form textarea:focus{
     outline-style: none;
     background-color: #fae1dd;
+}
+
+#igual, #mostrar{
+    width: 50vw;
+    align-self: center;
+    margin-bottom: 3vh;
+    font-size: 16px;
+}
+
+#senha, #confSenha{
+    margin-bottom: 1vh;
+}
+
+#mostrar .fas.fa-battery-quarter{
+    color: #ff6b6b;
+    font-size: 20px;
+}
+
+#mostrar .fas.fa-battery-half{
+    color: #e9c46a;
+    font-size: 20px;
+}
+
+#mostrar .fas.fa-battery-three-quarters{
+    color: #adc178;
+    font-size: 20px;
+}
+
+#mostrar .fas.fa-battery-full{
+    color: #457b9d;
+    font-size: 20px;
+}
+
+#igual .far.fa-times-circle{
+    color: #ff6b6b;
+    font-size: 20px;
+}
+
+#igual .far.fa-check-circle{
+    color: #457b9d;
+    font-size: 20px;
 }
