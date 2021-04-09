@@ -18,6 +18,15 @@ h1 {
     background-color: #eaf2f8;
 }
 
+.grid-principal2 {
+    margin: auto;
+    width: 60vw;
+    border: 1px #f07167 solid;
+    box-shadow: 0 0 10px 3px #f07167;
+    padding: 1vh;
+    background-color: #eaf2f8;
+}
+
 .grid-livro {
     width: 80vw;
     display: grid;
@@ -115,6 +124,14 @@ footer {
     position: relative;
 }
 
-#footer {
-    position: absolute;
+.grid-form {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#botao_cadastro {
+    margin-top: 30px;
+    text-align: center;
+    height: 6vh;
 }

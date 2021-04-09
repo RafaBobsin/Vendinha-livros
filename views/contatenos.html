@@ -6,9 +6,15 @@
     <link rel="stylesheet" type="text/css" href="../public/css/main.css">
     <link rel="stylesheet" type="text/css" href="../public/css/dropdown.css">
     <link rel="stylesheet" type="text/css" href="../public/css/login.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
     <link rel="icon" href="../public/images/logo_vendinha.png" sizes="17x17" type="image/png">
     <script src="https://kit.fontawesome.com/70aefda47d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../public/js/dropdown.js"></script>
+    <script type="text/javascript" src="../public/js/mascara.js"></script>
+    <script type="text/javascript" src="../public/js/mascaraCPF.js"></script>
+    <script type="text/javascript" src="../public/js/validacao.js"></script>
+    <script type="text/javascript" src="../public/js/validacao2.js"></script>
 </head>
 
 <body>
@@ -37,71 +43,74 @@
     </header>
 
     <main>
-        <h1>Algum problema ou sugestão? Fale conosco!</h1>
+        <center><h1>Algum problema ou sugestão? Fale conosco!</h1></center>
 
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" placeholder="Digite aqui..." required="required">
+        <div class="grid-principal2">
 
-            <label for="cpf">CPF:</label>
-            <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite aqui..." required="required">
+                
+                <label for="cpf">CPF:</label>
+                <input name="cpf" type="text" id="cpf" maxlength="11" required placeholder="Apenas números"/>
 
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" placeholder="seuemail@email.com" required="required">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="seuemail@email.com" required="required">
 
-            <label for="tel">Telefone:</label>
-            <input type="number" name="tel" placeholder="Não esqueça o DDD" required="required">
+                <label for="tel">Telefone:</label>
+                <input type="text" id="phone" name="phone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" placeholder="Não esqueça o DDD" required/>
 
-            <label for="cidade">Cidade sede da Vendinha:</label>
-            <select name="cidades" required="required">
-                <option value="" data-default disabled selected></option>
-                <option>Porto Alegre</option>
-                <option>São Paulo</option>
-                <option>Belo Horizonte</option>
-                <option>Osório</option>
-                <option>Rio de Janeiro</option>
-                <option>Utilizado site</option>
-            </select>
+                <label for="cidade">Cidade sede da Vendinha:</label>
+                <select name="cidades" required="required">
+                    <option value="" data-default disabled selected></option>
+                    <option>Porto Alegre</option>
+                    <option>São Paulo</option>
+                    <option>Belo Horizonte</option>
+                    <option>Osório</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Utilizado site</option>
+                </select>
 
-            <label for="estado">Estado:</label>
-            <select name="estado" required="required">
-                <option value="" data-default disabled selected></option>
-                <option>Rio Grande do Sul</option>
-                <option>São Paulo</option>
-                <option>Minas Gerais</option>
-                <option>Rio de Janeiro</option>
-                <option>Online</option>
-            </select>
+                <label for="estado">Estado:</label>
+                <select name="estado" required="required">
+                    <option value="" data-default disabled selected></option>
+                    <option>Rio Grande do Sul</option>
+                    <option>São Paulo</option>
+                    <option>Minas Gerais</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Online</option>
+                </select>
 
-            <label for="idade">Idade:</label>
-            <input type="number" name="idade" placeholder="Digite aqui..." required="required">
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" placeholder="Digite aqui..." required="required">
 
-            <label for="sexo">Sexo:</label>
-            <div class="radio">
-                <input type="radio" id="masc" name="sexo" value="masc">
-                <label for="masc">Masculino</label>
+                <label for="sexo">Sexo:</label>
+                <div class="radio">
+                    <input type="radio" id="masc" name="sexo" value="masc">
+                    <label for="masc">Masculino</label>
 
-                <input type="radio" id="fem" name="sexo" value="fem">
-                <label for="fem">Feminino</label>
+                    <input type="radio" id="fem" name="sexo" value="fem">
+                    <label for="fem">Feminino</label>
 
-                <input type="radio" id="outro" name="sexo" value="outro">
-                <label for="outro">Outro</label>
-            </div>
+                    <input type="radio" id="outro" name="sexo" value="outro">
+                    <label for="outro">Outro</label>
+                </div>
 
-            <label for="mot">Motivo do contato:</label>
-            <select name="mot" required="required">
-                <option value="" data-default disabled selected></option>
-                <option>Dúvida</option>
-                <option>Elogio</option>
-                <option>Reclamação</option>
-                <option>Outro</option>
-            </select>
+                <label for="mot">Motivo do contato:</label>
+                <select name="mot" required="required">
+                    <option value="" data-default disabled selected></option>
+                    <option>Dúvida</option>
+                    <option>Elogio</option>
+                    <option>Reclamação</option>
+                    <option>Outro</option>
+                </select>
 
-            <label for="textArea">Deixe abaixo o que gostaria de dizer:</label>
-            <textarea placeholder="Digite aqui..." required="required"></textarea>
+                <label for="textArea">Deixe abaixo o que gostaria de dizer:</label>
+                <textarea placeholder="Digite aqui..." required="required"></textarea>
 
-            <button type="submit" onclick="validar()"></button>
-        </form>
+                <button id="botao_cadastro" type="submit" onclick="valida()">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer class="cont">
@@ -263,7 +272,6 @@
             insertValue(arrayCpf.join(""), arrayCpf.indexOf(char))
         }
     </script>
-
 </body>
 
 </html>

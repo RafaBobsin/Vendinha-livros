@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../public/css/main.css">
     <link rel="stylesheet" type="text/css" href="../public/css/dropdown.css">
     <link rel="stylesheet" type="text/css" href="../public/css/login.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
     <link rel="icon" href="../public/images/logo_vendinha.png" sizes="17x17" type="image/png">
     <script src="https://kit.fontawesome.com/70aefda47d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../public/js/dropdown.js"></script>
@@ -38,32 +40,34 @@
     </header>
 
     <main>
-        <h1>Faça login para comprar</h1>
+        <center><h1>Faça login para comprar</h1></center>
 
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" placeholder="Digite aqui..." required="required">
+        <div class="grid-principal2">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite aqui..." required="required">
 
-            <label for="cpf">CPF:</label>
-            <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required">
+                <label for="cpf">CPF:</label>
+                <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required">
 
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" placeholder="seuemail@email.com" required="required">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="seuemail@email.com" required="required">
 
-            <label for="senha">Senha:</label>
-            <input id="senha" type="password" name="senha" placeholder="Digite aqui..." required="required" onkeyup="javascript:validar_senha()">
-            <div id="mostrar"></div>
+                <label for="senha">Senha:</label>
+                <input id="senha" type="password" name="senha" placeholder="Digite aqui..." required="required" onkeyup="javascript:validar_senha()">
+                <div id="mostrar"></div>
 
-            <label for="confSenha">Confirme a Senha:</label>
-            <input type="password" id="confSenha" name="confSenha" placeholder="Repita a senha acima" required="required" onkeyup="javascript:verificar_senha()">
-            <div id="igual"></div>
+                <label for="confSenha">Confirme a Senha:</label>
+                <input type="password" id="confSenha" name="confSenha" placeholder="Repita a senha acima" required="required" onkeyup="javascript:verificar_senha()">
+                <div id="igual"></div>
 
-            <button onclick="validar()">Efetuar</button>
-        </form>
+                <button onclick="validar()">Efetuar</button>
+            </form>
+        </div>
 <!--onkeyup="mostraF_senha()-->
     </main>
 
-    <footer id="login">
+    <footer id="login footer">
         <img src="../public/images/logo_vendinha_side.png" alt="logo da vendinha">
 
         <div class="direitos">
