@@ -1,18 +1,101 @@
-#produtos{
-    max-width: 900px;
-    margin:0 auto;
-    padding:0 2%;
+/*{border: 1px solid black;}*/
+
+.principal{
+    margin: auto;
+    width: 80vw;
+    border: 1px #f07167 solid;
+    box-shadow: 0 0 10px 3px #f07167;
+    padding: 2vh;
+    background-color: #eaf2f8;
     display: flex;
+    flex-direction: column;
 }
 
-#carrinho{
-    max-width: 900px;
-    margin:0 auto;
-    padding:0 2%;
-    display: block;
+.livro{
+    display: flex;
+    margin-bottom: 3vh;
+    width: 95%;
+    margin: 3vh auto;
 }
 
-.produto-single{
-    width:33.3%;
-    padding:0 20px;
+.imagem img{
+    width: 8vw;
+    margin-right: 2vw;
+}
+
+.descricao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carrinho{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 10vw;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #f07167;
+    box-shadow: 0 0 5px #f07167;
+}
+
+input:focus{
+    outline-style: none;
+    background-color: #fae1dd;
+}
+
+.pagar{
+    border: 1px solid #f07167;
+    box-shadow: 0 0 8px #f07167;
+    padding: 2vh 3vw;
+    width: fit-content;
+    align-self: flex-end;
+    margin-right: 2vw;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+button{
+    width: 20vw;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: #f07167;
+    color: white;
+    border: 0px;
+    font-size: 16px;
+}
+
+button:focus{
+    outline-style: none;
+}
+
+button:hover{
+    background-color: #c83e4d;
+    border: 1px solid #f07167;
+    font-weight: bold;
+    transition: .5s;
+    box-shadow: 0 0 5px #f07167;
+}
+
+hr {
+    width: 95%;
+    box-shadow: 0 0 7px 1px #f07167;
+    border-style: unset;
+    margin-bottom: 3vh;
+}
+
+#footerCarrinho{
+    position: relative;
 }

@@ -5,8 +5,7 @@
     <title>Vendinha de Livros MMR</title>
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/dropdown.css">
-    <link rel="stylesheet" href="../public/css/grid.css">
-    <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/carrinho.css">
     <link rel="icon" href="../public/images/logo_vendinha.png" sizes="17x17" type="image/png">
     <script src="https://kit.fontawesome.com/70aefda47d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../public/js/dropdown.js"></script>
@@ -41,39 +40,100 @@
 
     <main>
         <h1>Carrinho de compras</h1>
-        <div class="grid-principal">
-            <div class="grid-livro">
-                <div class="grid-imagem">
-                    <img id="livros" src="../public/images/carrinho.png" alt="livro">
+        <div class="principal">
+
+            <div class="livro">
+                <div class="imagem">
+                    <img id="livros" src="../public/images/livro1.jpg" alt="livro">
                 </div>
-                <div class="grid-descricao">
-                    <div class="grid-texto">
-                        <h3>Nome do produto</h3>
-                        <p>Descrião do produto</p>
-                    </div><br>
-                    <div class="grid-carrinho">
-                        <div class="grid-carrinho1">
-                            <div class="grid-valor">
-                                <p id="valor">TOTAL: R$ <b>00,00</b></p>
-                            </div>
-                            <div class="grid-botao">
-                                <p>
-                                    <button onclick="adicionarCarrinho();">Realizar pagamento</button>
-                                </p>
-                            </div>
+
+                <div class="descricao">
+                    <div class="texto">
+                        <h3>Extraordinário</h3>
+                        <p>R. J. Palacio</p>
+                    </div>
+
+                    <div class="carrinho">
+                        <div class="valor">
+                            <p id="valor">Valor unitário: R$ <b id="valor1">39.90</b></p>
                         </div>
-                        <div></div>
+
+                        <div class="input">
+                            <input type="number" name="quantidade" id="livro1" min="0" max="100" onchange="calcular()">
+                            <label for="quantidade">Unidades</label>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <hr>
+
+            <div class="livro">
+                <div class="imagem">
+                    <img id="livros" src="../public/images/livro2.jpg" alt="livro" >
+                </div>
+
+                <div class="descricao">
+                    <div class="texto">
+                        <h3>O Diário de Anne Frank</h3>
+                        <p>Anne Frank</p>
+                    </div>
+
+                    <div class="carrinho">
+                        <div class="valor">
+                            <p id="valor">Valor unitário: R$ <b id="valor2">19.90</b></p>
+                        </div>
+
+                        <div class="input">
+                            <input type="number" name="quantidade" id="livro2" min="0" max="100" onchange="calcular()">
+                            <label for="quantidade">Unidades</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="livro">
+                <div class="imagem">
+                    <img id="livros" src="../public/images/livro9.jpg" alt="livro">
+                </div>
+
+                <div class="descricao">
+                    <div class="texto">
+                        <h3>Harry Potter e o Enigma do Principe</h3>
+                        <p>JK Rowling</p>
+                    </div>
+
+                    <div class="carrinho">
+                        <div class="valor">
+                            <p id="valor">Valor unitário: R$ <b id="valor3">32.90</b></p>
+                        </div>
+
+                        <div class="input">
+                            <input type="number" name="quantidade" id="livro3" min="0" max="100" onchange="calcular()">
+                            <label for="quantidade">Unidades</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="pagar">
+                <p>Valor total: R$ <b id="total"></b></p>
+                <p>Aproveite o frete grátis para qualquer lugar do país!</p>
+                <button onclick="realizarPagamento()">Realizar pagamento</button>
             </div>
         </div>
     </main>
 
-    <footer id="footer">
+    <footer id="footerCarrinho">
         <img src="../public/images/logo_vendinha_side.png" alt="logo da vendinha">
 
         <div class="direitos">
-            <p>Made with <i class="fas fa-heart"></i> by <a href= "https://github.com/Mayhopejk">Mayhopejk</a>, <a href="https://github.com/MellMatsuda">MellMatsuda</a>
+            <p>Made with <i class="fas fa-heart"></i> by <a href="https://github.com/Mayhopejk">Mayhopejk</a>, <a
+                    href="https://github.com/MellMatsuda">MellMatsuda</a>
                 and <a href="https://github.com/RafaBobsin">RafaBobsin</a></p>
 
             <p id="cop"><i class="far fa-copyright"></i> MMR Desenvolvedoras</p>
