@@ -43,7 +43,7 @@
     justify-content: center;
 }
 
-input{
+.input input{
     width: 10vw;
     text-align: center;
     border-radius: 5px;
@@ -51,7 +51,7 @@ input{
     box-shadow: 0 0 5px #f07167;
 }
 
-input:focus{
+.input input:focus{
     outline-style: none;
     background-color: #fae1dd;
 }
@@ -67,7 +67,7 @@ input:focus{
     margin-top: 3vh;
 }
 
-button{
+.pagar button{
     width: 20vw;
     height: 6vh;
     border-radius: 10px;
@@ -77,11 +77,11 @@ button{
     font-size: 16px;
 }
 
-button:focus{
+.pagar button:focus{
     outline-style: none;
 }
 
-button:hover{
+.pagar button:hover{
     background-color: #c83e4d;
     border: 1px solid #f07167;
     font-weight: bold;

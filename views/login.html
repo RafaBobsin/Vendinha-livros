@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/70aefda47d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../public/js/dropdown.js"></script>
     <script type="text/javascript" src="../public/js/validacao.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -50,7 +52,8 @@
                 <input type="text" name="nome" placeholder="Digite aqui..." required="required">
 
                 <label for="cpf">CPF:</label>
-                <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required" onfocus="masc_cpf()">
+                <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required"
+                    onfocus="masc_cpf()">
 
                 <label for="email">E-mail:</label>
                 <input type="email" name="email" placeholder="seuemail@email.com" required="required">
@@ -61,8 +64,7 @@
                     <input id="senha" type="password" name="senha" placeholder="Digite aqui..." required="required"
                         onkeyup="javascript:validar_senha()">
 
-                    <a onclick="mostra_senha()" href="#"><i class="far fa-eye" id="icon1"
-                            style="display: block;"></i>
+                    <a onclick="mostra_senha()" href="#"><i class="far fa-eye" id="icon1" style="display: block;"></i>
                         <i class="far fa-eye-slash" id="icon2" style="display: none;"></i></a>
                 </div>
 
@@ -74,8 +76,7 @@
                     <input type="password" id="confSenha" name="confSenha" placeholder="Repita a senha acima"
                         required="required" onkeyup="javascript:verificar_senha()">
 
-                    <a onclick="mostra_senha2()" href="#"><i class="far fa-eye" id="icon3"
-                            style="display: block;"></i>
+                    <a onclick="mostra_senha2()" href="#"><i class="far fa-eye" id="icon3" style="display: block;"></i>
                         <i class="far fa-eye-slash" id="icon4" style="display: none;"></i></a>
                 </div>
 
@@ -91,7 +92,8 @@
         <img src="../public/images/logo_vendinha_side.png" alt="logo da vendinha">
 
         <div class="direitos">
-            <p>Made with <i class="fas fa-heart"></i> by <a href="https://github.com/Mayhopejk">Mayhopejk</a>, <a href="https://github.com/MellMatsuda">MellMatsuda</a>
+            <p>Made with <i class="fas fa-heart"></i> by <a href="https://github.com/Mayhopejk">Mayhopejk</a>, <a
+                    href="https://github.com/MellMatsuda">MellMatsuda</a>
                 and <a href="https://github.com/RafaBobsin">RafaBobsin</a></p>
 
             <p id="cop"><i class="far fa-copyright"></i> MMR Desenvolvedoras</p>
