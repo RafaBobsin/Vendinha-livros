@@ -8,7 +8,7 @@ function validar() {
     } else {
         alert("Login realizado com sucesso.");
     }
-    
+
 }
 
 function validar_cpf(cpf) {
@@ -17,7 +17,7 @@ function validar_cpf(cpf) {
 
     if (cpf.length != 14) {
         alert("CPF inválido, quantidade de digitos incorreta");
-    } else{
+    } else {
         qCpf = true;
     }
 
@@ -26,7 +26,7 @@ function validar_cpf(cpf) {
 
         alert("CPF inválido, todos os valores são iguais");
 
-    } else{
+    } else {
         vCpf = true;
     }
 
@@ -82,7 +82,7 @@ function verificar_senha() {
     var senha = document.getElementById("senha").value;
     var repSenha = document.getElementById("confSenha").value;
 
-    if(repSenha === senha){
+    if (repSenha === senha) {
         document.getElementById("igual").innerHTML = "<i class='far fa-check-circle'></i> Senhas iguais."
         vConfSenha = true;
     } else {
@@ -93,13 +93,13 @@ function verificar_senha() {
 
 function mostra_senha() {
     var senha = document.getElementById("senha");
-    
+
     if (senha.type == 'password') {
         senha.type = 'text';
         document.getElementById("icon1").style.display = 'none';
         document.getElementById("icon2").style.display = 'block';
-        
-    } else{
+
+    } else {
         senha.type = 'password';
         document.getElementById("icon1").style.display = 'block';
         document.getElementById("icon2").style.display = 'none';
@@ -108,13 +108,13 @@ function mostra_senha() {
 
 function mostra_senha2() {
     var senha = document.getElementById("confSenha");
-    
+
     if (senha.type == 'password') {
         senha.type = 'text';
         document.getElementById("icon3").style.display = 'none';
         document.getElementById("icon4").style.display = 'block';
-        
-    } else{
+
+    } else {
         senha.type = 'password';
         document.getElementById("icon3").style.display = 'block';
         document.getElementById("icon4").style.display = 'none';

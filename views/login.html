@@ -50,7 +50,7 @@
                 <input type="text" name="nome" placeholder="Digite aqui..." required="required">
 
                 <label for="cpf">CPF:</label>
-                <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required">
+                <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required="required" onfocus="masc_cpf()">
 
                 <label for="email">E-mail:</label>
                 <input type="email" name="email" placeholder="seuemail@email.com" required="required">
@@ -61,9 +61,9 @@
                     <input id="senha" type="password" name="senha" placeholder="Digite aqui..." required="required"
                         onkeyup="javascript:validar_senha()">
 
-                    <button onclick="mostra_senha()"><i class="far fa-eye" id="icon1"
+                    <a onclick="mostra_senha()" href="#"><i class="far fa-eye" id="icon1"
                             style="display: block;"></i>
-                        <i class="far fa-eye-slash" id="icon2" style="display: none;"></i></button>
+                        <i class="far fa-eye-slash" id="icon2" style="display: none;"></i></a>
                 </div>
 
                 <div id="mostrar"></div>
@@ -74,9 +74,9 @@
                     <input type="password" id="confSenha" name="confSenha" placeholder="Repita a senha acima"
                         required="required" onkeyup="javascript:verificar_senha()">
 
-                    <button onclick="mostra_senha2()"><i class="far fa-eye" id="icon3"
+                    <a onclick="mostra_senha2()" href="#"><i class="far fa-eye" id="icon3"
                             style="display: block;"></i>
-                        <i class="far fa-eye-slash" id="icon4" style="display: none;"></i></button>
+                        <i class="far fa-eye-slash" id="icon4" style="display: none;"></i></a>
                 </div>
 
                 <div id="igual"></div>

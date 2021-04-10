@@ -142,12 +142,24 @@ form textarea:focus{
     margin: auto;
 }
 
-.senhas button{
+.senhas a{
     width: 3vw;
-    height: 3vh;
-    padding: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     margin: 0;
-    align-self: auto;
+    background-color: #f07167;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.senhas a:hover{
+    background-color: #c83e4d;
+    border: 1px solid #f07167;
+    font-weight: bold;
+    transition: .5s;
+    box-shadow: 0 0 5px #f07167;
 }
 
 .senhas input{
