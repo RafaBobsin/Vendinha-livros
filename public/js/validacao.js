@@ -3,8 +3,8 @@ var vCpf = false, qCpf = false, vSenha, vConfSenha;
 function validar() {
     validar_cpf(cpf);
 
-    if (vCpf == false || qCpf == false || vSenha == false || vConfSenha == false) {
-        alert("Ocorreu um problema elguma parte do seu cadastro. Tente verificar se seu CPF é valido, se a senha é forte e/ou se está igual nos dois campos.");
+    if (!vCpf || !qCpf || !vSenha || !vConfSenha) {
+        alert("Ocorreu um problema em alguma parte do seu cadastro. Tente verificar se seu CPF é valido, se a senha é forte e/ou se está igual nos dois campos.");
     } else {
         alert("Login realizado com sucesso.");
     }
@@ -71,11 +71,13 @@ function validar_senha() {
     } else if (forca == 17) {
         document.getElementById("mostrar").innerHTML = "<i class='fas fa-battery-full'></i> Excelente senha!";
     }
-
+  
     if (forca < 11) {
         vSenha = false;
+    } else{
+        vSenha = true;
     }
-
+  
 }
 
 function verificar_senha() {
